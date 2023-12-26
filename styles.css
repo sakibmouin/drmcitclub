@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #04151D;
+    background-color: rgb(4, 21, 29);
     color: #FEFEFC;
     margin: 0;
     padding: 0;
@@ -59,15 +59,11 @@ input[type="submit"]:hover {
 .line {
     display: flex;
     flex-wrap: wrap;
+    gap: 2px;
 }
 
-.shiftDiv,
-.classDiv,
-.sectionDiv {
+.line * {
     flex-grow: 1;
-    margin: 0 2px;
 }
 
-.sectionDiv {
-    flex-shrink: 0;
-}
+
