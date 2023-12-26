@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+
+      form {
+        margin-top: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+    <title>Volunteer Registration Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Volunteer Registration Form for DRMC IT Club</h2>
+      <p>Thank you for offering your time and talents to the DRMC IT Club as a volunteer! Your commitment and abilities can significantly further our goal. Please take a few moments to complete this registration form.</p>
+      <form action="#" method="post">
+        <label for="fullName">Full Name (Acc. to Registration Details) *</label>
+        <input type="text" id="fullName" name="fullName" required>
+        <label for="shift">Shift *</label>
+        <select id="shift" name="shift" required>
+          <option value="morning">Morning</option>
+          <option value="day">Day</option>
+        </select>
+        <label for="class">Class *</label>
+        <select id="class" name="class" required>
+          <option value="11">11</option>
+          <option value="old10">Old 10</option>
+          <option value="new10">New 10</option>
+          <option value="9">9</option>
+          <option value="8">8</option>
+          <option value="7">7</option>
+          <option value="6">6</option>
+        </select>
+        <label for="section">Section *</label>
+        <select id="section" name="section" required>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="E">E</option>
+          <option value="F">F</option>
+          <option value="G">G</option>
+        </select>
+        <label for="collegeId">College ID *</label>
+        <input type="text" id="collegeId" name="collegeId" placeholder="e.g. M00000" required>
+        <label for="referenceId">College ID of the Person of Reference (if any)</label>
+        <input type="text" id="referenceId" name="referenceId" placeholder="e.g. M00000">
+        <label for="phoneNumber">Phone Number (Own) *</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="e.g. 01XXXXXXXXX" required>
+        <label for="backupPhoneNumber">Backup Phone Number (if any)</label>
+        <input type="tel" id="backupPhoneNumber" name="backupPhoneNumber" placeholder="e.g. 01XXXXXXXXX">
+        <label for="email">Email (if any)</label>
+        <input type="email" id="email" name="email" placeholder="e.g. name@domain.com">
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
