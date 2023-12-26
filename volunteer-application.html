@@ -1,103 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(4, 21, 29);
+        color: #FEFEFC;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #04151D;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #FEFEFC;
+      }
+
+      form {
+        margin-top: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        color: #FEFEFC;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #FEFEFC;
+        box-sizing: border-box;
+        background-color: #04151D;
+        color: #FEFEFC;
+      }
+
+      input[type="submit"] {
+        background-color: #04151D;
+        color: #FEFEFC;
+        cursor: pointer;
+        transition: all 0.1s;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0C443B;
+        transform: translateY(-3px);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      }
+
+      .help-block {
+        margin-top: -10px;
+        margin-bottom: 15px;
+        color: #FEFEFC;
+      }
+
+      .line {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px;
+      }
+
+      .line * {
+        flex-grow: 1;
+      }
+    </style>
     <title>Volunteer Registration Form</title>
-
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>Volunteer Registration Form for DRMC IT Club</h1>
-        <p>Thank you for offering your time and talents to the DRMC IT Club as a volunteer! Your commitment and abilities can significantly further our goal. Please take a few moments to complete this registration form.</p>
-
-        <script type="text/javascript">var submitted=false</script>
-        <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submitted){window.location='success.html';}"></iframe>
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSeKjcchZUdUW-aJNtqQ-uL32EAjqYK_Tde5Nt5ZoLp4G82DwQ/formResponse" method="POST" target="hiddenConfirm" onsubmit="submitted=true">
+      <h1>Volunteer Registration Form for DRMC IT Club</h1>
+      <p>Thank you for offering your time and talents to the DRMC IT Club as a volunteer! Your commitment and abilities can significantly further our goal. Please take a few moments to complete this registration form.</p>
+      <script type="text/javascript">
+        var submitted = false
+      </script>
+      <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submitted){window.location='submission.html';}"></iframe>
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSeKjcchZUdUW-aJNtqQ-uL32EAjqYK_Tde5Nt5ZoLp4G82DwQ/formResponse" method="POST" target="hiddenConfirm" onsubmit="submitted=true">
+        <div class="form-group">
+          <label for="fullName">Full Name (Acc. to Registration Details)</label>
+          <input type="text" id="fullName" name="entry.669374907" required>
+        </div>
+        <div class="form-row">
+          <div class="line">
+            <div class="form-group shiftDiv">
+              <label for="shift">Shift</label>
+              <select id="shift" name="entry.768181049" required>
+                <option value="" disabled selected>Not Selected</option>
+                <option value="Morning">Morning</option>
+                <option value="Day">Day</option>
+              </select>
+            </div>
+            <div class="form-group classDiv">
+              <label for="class">Class</label>
+              <select id="class" name="entry.715035732" required>
+                <option value="" disabled selected>Not Selected</option>
+                <option value="11">11</option>
+                <option value="Old 10">Old 10</option>
+                <option value="New 10">New 10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+              </select>
+            </div>
+            <div class="form-group sectionDiv">
+              <label for="section">Section</label>
+              <select id="section" name="entry.1016492816" required>
+                <option value="" disabled selected>Not Selected</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+              </select>
+            </div>
             <div class="form-group">
-                <label for="fullName">Full Name (Acc. to Registration Details)</label>
-                <input type="text" id="fullName" name="entry.669374907" required>
+              <label for="collegeId">College ID</label>
+              <input type="text" id="collegeId" name="entry.1873413722" placeholder="e.g. M00000" required>
             </div>
-
-            <div class="form-row">
-                <div class="line">
-                    <div class="form-group shiftDiv">
-                        <label for="shift">Shift</label>
-                        <select id="shift" name="entry.768181049" required>
-                            <option value="" disabled selected>Not Selected</option>
-                            <option value="Morning">Morning</option>
-                            <option value="Day">Day</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group classDiv">
-                        <label for="class">Class</label>
-                        <select id="class" name="entry.715035732" required>
-                            <option value="" disabled selected>Not Selected</option>
-                            <option value="11">11</option>
-                            <option value="Old 10">Old 10</option>
-                            <option value="New 10">New 10</option>
-                            <option value="9">9</option>
-                            <option value="8">8</option>
-                            <option value="7">7</option>
-                            <option value="6">6</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group sectionDiv">
-                        <label for="section">Section</label>
-                        <select id="section" name="entry.1016492816" required>
-                            <option value="" disabled selected>Not Selected</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                            <option value="D">D</option>
-                            <option value="E">E</option>
-                            <option value="F">F</option>
-                            <option value="G">G</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="collegeId">College ID</label>
-                        <input type="text" id="collegeId" name="entry.1873413722" placeholder="e.g. M00000" required>
-                    </div>
-                </div>
-
-                <div class="line">
-                    <div class="form-group">
-                        <label for="referenceId">College ID of the Person of Reference (if any)</label>
-                        <input type="text" id="referenceId" name="entry.1235635410" placeholder="e.g. M00000">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phoneNumber">Phone Number (Own)</label>
-                        <input type="tel" id="phoneNumber" name="entry.2096077577" placeholder="e.g. 01XXXXXXXXX" required>
-                    </div>
-                </div>
-
-                <div class="line">
-                    <div class="form-group">
-                        <label for="backupPhoneNumber">Backup Phone Number (if any)</label>
-                        <input type="tel" id="backupPhoneNumber" name="entry.848681060" placeholder="e.g. 01XXXXXXXXX">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email (if any)</label>
-                        <input type="email" id="email" name="entry.1950223270" placeholder="e.g. name@domain.com" required>
-                    </div>
-                </div>
-
-                <input type="hidden" name="fvv" value="1">
-                <input type="hidden" name="fbzx" value="6981000160897619506">
-                <input type="hidden" name="pageHistory" value="0">
-
-                <div class="form-group">
-                    <input type="submit" value="Submit">
-                </div>
+          </div>
+          <div class="line">
+            <div class="form-group">
+              <label for="referenceId">College ID of the Person of Reference (if any)</label>
+              <input type="text" id="referenceId" name="entry.1235635410" placeholder="e.g. M00000">
             </div>
-        </form>
+            <div class="form-group">
+              <label for="phoneNumber">Phone Number (Own)</label>
+              <input type="tel" id="phoneNumber" name="entry.2096077577" placeholder="e.g. 01XXXXXXXXX" required>
+            </div>
+          </div>
+          <div class="line">
+            <div class="form-group">
+              <label for="backupPhoneNumber">Backup Phone Number (if any)</label>
+              <input type="tel" id="backupPhoneNumber" name="entry.848681060" placeholder="e.g. 01XXXXXXXXX">
+            </div>
+            <div class="form-group">
+              <label for="email">Email (if any)</label>
+              <input type="email" id="email" name="entry.1950223270" placeholder="e.g. name@domain.com" required>
+            </div>
+          </div>
+          <input type="hidden" name="fvv" value="1">
+          <input type="hidden" name="fbzx" value="6981000160897619506">
+          <input type="hidden" name="pageHistory" value="0">
+          <div class="form-group">
+            <input type="submit" value="Submit">
+          </div>
+        </div>
+      </form>
     </div>
-</body>
+  </body>
 </html>
