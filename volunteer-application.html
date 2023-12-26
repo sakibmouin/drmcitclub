@@ -58,49 +58,95 @@
     <title>Volunteer Registration Form</title>
   </head>
   <body>
-    <div class="container">
-      <h2>Volunteer Registration Form for DRMC IT Club</h2>
-      <p>Thank you for offering your time and talents to the DRMC IT Club as a volunteer! Your commitment and abilities can significantly further our goal. Please take a few moments to complete this registration form.</p>
-      <form action="#" method="post">
-        <label for="fullName">Full Name (Acc. to Registration Details) *</label>
-        <input type="text" id="fullName" name="fullName" required>
-        <label for="shift">Shift *</label>
-        <select id="shift" name="shift" required>
-          <option value="morning">Morning</option>
-          <option value="day">Day</option>
-        </select>
-        <label for="class">Class *</label>
-        <select id="class" name="class" required>
-          <option value="11">11</option>
-          <option value="old10">Old 10</option>
-          <option value="new10">New 10</option>
-          <option value="9">9</option>
-          <option value="8">8</option>
-          <option value="7">7</option>
-          <option value="6">6</option>
-        </select>
-        <label for="section">Section *</label>
-        <select id="section" name="section" required>
-          <option value="A">A</option>
-          <option value="B">B</option>
-          <option value="C">C</option>
-          <option value="D">D</option>
-          <option value="E">E</option>
-          <option value="F">F</option>
-          <option value="G">G</option>
-        </select>
-        <label for="collegeId">College ID *</label>
-        <input type="text" id="collegeId" name="collegeId" placeholder="e.g. M00000" required>
-        <label for="referenceId">College ID of the Person of Reference (if any)</label>
-        <input type="text" id="referenceId" name="referenceId" placeholder="e.g. M00000">
-        <label for="phoneNumber">Phone Number (Own) *</label>
-        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="e.g. 01XXXXXXXXX" required>
-        <label for="backupPhoneNumber">Backup Phone Number (if any)</label>
-        <input type="tel" id="backupPhoneNumber" name="backupPhoneNumber" placeholder="e.g. 01XXXXXXXXX">
-        <label for="email">Email (if any)</label>
-        <input type="email" id="email" name="email" placeholder="e.g. name@domain.com">
-        <input type="submit" value="Submit">
-      </form>
-    </div>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSeKjcchZUdUW-aJNtqQ-uL32EAjqYK_Tde5Nt5ZoLp4G82DwQ/formResponse" method="POST">
+      <fieldset>
+        <h2>Volunteer Registration Form for DRMC IT Club <br>
+          <small>Thank you for offering your time and talents to the DRMC IT Club as a volunteer! Your commitment and abilities can significantly further our goal. Please take a few moments to complete this registration form. Contact: Intezab Alam Sheikh, XI-F(Morning) : 01845885327 Nazmus Sakib Mouin, XI-F(Day) : 01766750475 Facebook | Website</small>
+        </h2>
+      </fieldset>
+      <!-- Full Name -->
+      <fieldset>
+        <legend for="fullName">Full Name (Acc. to Registration Details)</legend>
+        <div class="form-group">
+          <input type="text" id="669374907" name="entry.669374907" required>
+        </div>
+      </fieldset>
+      <!-- Shift -->
+      <fieldset>
+        <legend for="shift">Shift</legend>
+        <div class="form-group">
+          <label>
+            <input type="radio" name="entry.768181049" value="Morning" required> Morning </label>
+          <label>
+            <input type="radio" name="entry.768181049" value="Day" required> Day </label>
+        </div>
+      </fieldset>
+      <!-- Class -->
+      <fieldset>
+        <legend for="class">Class</legend>
+        <div class="form-group">
+          <!-- Adjust radio button values accordingly -->
+          <label>
+            <input type="radio" name="entry.715035732" value="11" required> 11 </label>
+          <!-- Repeat for other options -->
+        </div>
+      </fieldset>
+      <!-- Section -->
+      <fieldset>
+        <legend for="section">Section</legend>
+        <div class="form-group">
+          <!-- Adjust radio button values accordingly -->
+          <label>
+            <input type="radio" name="entry.1016492816" value="A" required> A </label>
+          <!-- Repeat for other options -->
+        </div>
+      </fieldset>
+      <!-- College ID -->
+      <fieldset>
+        <legend for="collegeId">College ID</legend>
+        <div class="form-group">
+          <p class="help-block">e.g. M00000</p>
+          <input type="text" id="1873413722" name="entry.1873413722" required>
+        </div>
+      </fieldset>
+      <!-- College ID of the Person of Reference -->
+      <fieldset>
+        <legend for="referenceId">College ID of the Person of Reference (if any)</legend>
+        <div class="form-group">
+          <p class="help-block">e.g. M00000</p>
+          <input type="text" id="1235635410" name="entry.1235635410">
+        </div>
+      </fieldset>
+      <!-- Phone Number -->
+      <fieldset>
+        <legend for="phoneNumber">Phone Number (Own)</legend>
+        <div class="form-group">
+          <p class="help-block">e.g. 01XXXXXXXXX</p>
+          <input type="text" id="2096077577" name="entry.2096077577" required>
+        </div>
+      </fieldset>
+      <!-- Backup Phone Number -->
+      <fieldset>
+        <legend for="backupPhoneNumber">Backup Phone Number (if any)</legend>
+        <div class="form-group">
+          <p class="help-block">e.g. 01XXXXXXXXX</p>
+          <input type="text" id="848681060" name="entry.848681060">
+        </div>
+      </fieldset>
+      <!-- Email -->
+      <fieldset>
+        <legend for="email">Email (if any)</legend>
+        <div class="form-group">
+          <p class="help-block">e.g. name@domain.com</p>
+          <input type="text" id="1950223270" name="entry.1950223270">
+        </div>
+      </fieldset>
+      <!-- Hidden fields for Google Form submission -->
+      <input type="hidden" name="fvv" value="1">
+      <input type="hidden" name="fbzx" value="6981000160897619506">
+      <input type="hidden" name="pageHistory" value="0">
+      <!-- Submit button -->
+      <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
   </body>
 </html>
