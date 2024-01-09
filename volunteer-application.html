@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
+        header {
+            font-family: 'Playfair Display', serif;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Lato', sans-serif;
             background-color: #04151D;
             color: #FEFEFC;
             margin: 0;
@@ -77,11 +84,11 @@
             flex-grow: 1;
         }
     </style>
-    <title>Volunteer Registration Form for DRMC IT Club 2.0</title>
+    <title>Volunteer Registration Form for DRMC IT Club</title>
 </head>
 <body>
 <div class="container">
-    <h1>Volunteer Registration Form for DRMC IT Club 2.0</h1>
+    <h1 class="header">Volunteer Registration Form for DRMC IT Club</h1>
     <p>Thank you for offering your time and talents to the DRMC IT Club as a volunteer! Your commitment and abilities can significantly further our goal. Please take a few moments to complete this registration form.</p>
     <script type="text/javascript">
         var submitted = false
@@ -90,7 +97,7 @@
     <form action="https://docs.google.com/forms/d/e/1FAIpQLScOkmfStpUGkLboFjtqf5TsAejgVnW0iya2b4cK-f78VpQ2Mw/formResponse" method="POST" target="hiddenConfirm" onsubmit="submitted=true">
         <div class="form-group">
             <label for="fullName">Full Name (Acc. to Registration Details)</label>
-            <input type="text" id="669374907" name="entry.669374907" class="form-control" required>
+            <input type="text" id="669374907" name="entry.669374907" class="form-control" required placeholder="Rafi Shahriar">
         </div>
         <div class="form-row">
             <div class="form-group">
@@ -129,29 +136,24 @@
             </div>
             <div class="form-group">
                 <label for="collegeId">College ID</label>
-                <p class="help-block">e.g. M00000</p>
-                <input type="text" id="1873413722" name="entry.1873413722" class="form-control" required>
+                <input type="text" id="1873413722" name="entry.1873413722" class="form-control" placeholder="M00000">
             </div>
         </div>
         <div class="form-group">
             <label for="referenceId">College ID of the Person of Reference (if any)</label>
-            <p class="help-block">e.g. M00000</p>
-            <input type="text" id="1235635410" name="entry.1235635410" class="form-control">
+            <input type="text" id="1235635410" name="entry.1235635410" class="form-control" placeholder="M00000">
         </div>
         <div class="form-group">
             <label for="phoneNumber">Phone Number (Own)</label>
-            <p class="help-block">e.g. 01XXXXXXXXX</p>
-            <input type="tel" id="2096077577" name="entry.2096077577" class="form-control" required>
+            <input type="tel" id="2096077577" name="entry.2096077577" class="form-control" required placeholder="01XXXXXXXXX">
         </div>
         <div class="form-group">
             <label for="backupPhoneNumber">Backup Phone Number (if any)</label>
-            <p class="help-block">e.g. 01XXXXXXXXX</p>
-            <input type="tel" id="848681060" name="entry.848681060" class="form-control">
+            <input type="tel" id="848681060" name="entry.848681060" class="form-control" placeholder="01XXXXXXXXX">
         </div>
         <div class="form-group">
             <label for="email">Email (if any)</label>
-            <p class="help-block">e.g. name@domain.com</p>
-            <input type="email" id="1950223270" name="entry.1950223270" class="form-control">
+            <input type="email" id="1950223270" name="entry.1950223270" class="form-control" placeholder="name@domain.com">
         </div>
         <input type="hidden" name="fvv" value="1">
         <input type="hidden" name="fbzx" value="7422864513033041017">
