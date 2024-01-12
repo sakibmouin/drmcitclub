@@ -7,6 +7,7 @@
     --text: #F7FCFE;
     --green: #0C443B;
     --light-green: #32947B;
+    background-color: var(--main-bg);
 }
 
 * {
