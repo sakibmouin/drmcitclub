@@ -2,7 +2,7 @@
 
 :root {
     --nav-bg: #0F171A;
-    --head-bg: #05161D;
+    --sec-bg: #05161D;
     --main-bg: #051419;
     --text: #F7FCFE;
     --green: #0C443B;
@@ -14,6 +14,7 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: var(--text);
 }
 
 body {
@@ -27,10 +28,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     z-index: 1;
-    background-color: var(--head-bg);
+    background-color: var(--sec-bg);
 }
 
 nav .logo {
@@ -119,12 +118,11 @@ nav ul li a:hover {
 }
 
 .active {
-    left: 0;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    color: var(--light-green);
 }
 
 .menubar {
-    background-color: var(--head-bg);
+    background-color: var(--sec-bg);
 }
 
 .menubar ul {
