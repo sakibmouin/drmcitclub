@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BIG Project</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-    <nav>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./tlwnd-cnfg.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="shadow-custom-dark">
         <div class="logo">
-          <img src="../DITC.png" alt="logo" />
+          <img src="./DITC.png" alt="logo" />
         </div>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="/big" class="active">Home</a>
           </li>
           <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Contact Us</a>
+            <a href="/big/about.html">About</a>
           </li>
         </ul>
         <div class="hamburger">
@@ -34,22 +34,14 @@
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Blog</a>
-          </li>
-          <li>
-            <a href="#">Contact Us</a>
+            <a href="/big/about.html">About</a>
           </li>
         </ul>
       </div>
-
-      <section>
-        <img class="hero-bg" src="./big-bg.jpg" alt="">
-      </section>
-
-
-      <script src="./script.js"></script>
-    </body>
+    </header>
+    <section>
+      <img class="hero-bg" src="./big-bg.jpg" alt="" />
+    </section>
+    <script src="./script.js"></script>
+  </body>
 </html>
